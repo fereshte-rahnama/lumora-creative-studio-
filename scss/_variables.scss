@@ -18,3 +18,10 @@ $button-text: #0A0A0F;
 
 $white: #FFFFFF;
 $black: #000000;
+
+$gradient-primary:radial-gradient(
+    circle at 70% 20%,
+    #17121f 0%,
+    #0f1117 35%,
+    #0a0c10 75%
+        );
