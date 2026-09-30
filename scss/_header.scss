@@ -1,0 +1,44 @@
+
+header{
+    >nav{
+        background-color: $bg-primary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 5%;
+        img{
+            width: 150px;
+            height: 50px;
+        }
+        ul{
+            display: flex;
+            gap:25px;
+            align-items: center;
+            >li >a{
+                font-size: 18px;
+                color: $text-primary;
+            }
+            >button{
+                width: 130px;
+                height: 35px;
+                border-radius: 20px;
+                background-color: $bg-primary;
+                display: flex;
+                align-items: center;
+                padding-left: 30px;
+                font-size: 14px;
+                color: $text-primary;
+                border: 1px solid  $border;
+                transition: all 0.3 ease;
+                cursor: pointer;
+                >i{
+                    font-size: 14px;
+                }
+                &:hover{
+                    
+                }
+            }
+        }
+    }
+}
