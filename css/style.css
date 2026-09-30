@@ -8,6 +8,7 @@
 
 body {
   background-color: #0A0A0F;
+  padding: 0 3%;
 }
 
 header > nav {
@@ -111,4 +112,15 @@ header > nav ul > .talk-btn i {
   background-color: #C39BFF;
   color: #0A0A0F;
   box-shadow: 0 0 20px rgba(185, 138, 255, 0.3);
+}
+.banner .banner-content .scroll-down {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #F5F3F8;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.banner .banner-content .scroll-down > i {
+  font-size: 28px;
 }/*# sourceMappingURL=style.css.map */

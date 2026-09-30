@@ -54,6 +54,17 @@
                 box-shadow: 0 0 20px rgba(185, 138, 255, 0.3);
             }
         }
+        .scroll-down{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: $text-primary;
+            margin-top: 40px;
+            font-size: 20px;
+            >i{
+                font-size: 28px;
+            }
+        }
 
     }
 }
