@@ -1,0 +1,92 @@
+.services{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    .services-text-right{
+        padding: 0 10%;
+        grid-column: 1/3;
+        >p{
+            color:$purple;
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 3px;
+            
+        }
+        >h2{
+            color: $text-primary;
+            font-size: 28px;
+            padding-top: 10px;
+            line-height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            >span{
+                color: $purple;
+                font-size: 28px;
+            }
+        }
+    }
+    .services-text-left{
+    padding: 25px 12%; 
+    grid-column: 3/5;
+    >p{
+        color: $text-secondary;
+        font-size: 14px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 30px;
+    }      
+    }
+
+    .services-card{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap:10px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        padding: 20px 24px;
+        border: 1px solid $border;
+        border-radius: 8px;
+
+        .card-top{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 70px;
+            >span{
+            color: $text-muted;
+            font-size: 16px;
+            }
+            >i{
+            font-size: 28px;
+            color: $text-primary;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $text-muted;
+            background-color: $border;
+            border-radius: 50%;
+
+            }
+        }
+
+
+        >h4{
+            color: $text-primary;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            letter-spacing: 2px;
+            padding-top: 20px;
+            text-align: left;
+        }
+        >p{
+            color: $text-muted;
+
+        }
+    }
+}
