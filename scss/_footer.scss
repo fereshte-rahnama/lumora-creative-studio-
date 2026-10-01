@@ -1,0 +1,32 @@
+footer{
+    height: 60px;
+    margin: 2px 5%;
+    background-color: $bg-primary;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    >img{
+        width: 100px;
+        height: 40px;
+        margin: 10px 5%;
+    }
+    >ul{
+        display: flex;
+        align-items: center;
+        gap:20px;
+
+        font-size: 14px;
+        >li >a{
+            color: $text-secondary;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+    >p{
+        align-items: center;
+        color: $text-secondary;
+        font-size: 11px;
+        padding-right: 5%;
+        padding-top: 24px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}

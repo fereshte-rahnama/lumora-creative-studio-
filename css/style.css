@@ -496,4 +496,36 @@ header > nav ul > .talk-btn i {
 .about .about-bottom > a > i {
   color: #B98AFF;
   font-size: 16px;
+}
+
+footer {
+  height: 60px;
+  margin: 2px 5%;
+  background-color: #0A0A0F;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+footer > img {
+  width: 100px;
+  height: 40px;
+  margin: 10px 5%;
+}
+footer > ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+footer > ul > li > a {
+  color: #B8B5C2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer > p {
+  align-items: center;
+  color: #B8B5C2;
+  font-size: 11px;
+  padding-right: 5%;
+  padding-top: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }/*# sourceMappingURL=style.css.map */
