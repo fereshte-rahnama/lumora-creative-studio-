@@ -519,7 +519,7 @@ footer > ul {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 14px;
+  font-size: 12px;
 }
 footer > ul > li > a {
   color: #B8B5C2;
