@@ -1,100 +1,371 @@
-.services{
+.services {
+    width: 90%;
     min-height: 400px;
     margin: 0 5%;
     padding: 20px 5%;
+    box-sizing: border-box;
+
     column-gap: 10px;
     row-gap: 20px;
+
     background-color: $bg-primary;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 
-    .services-text-right{
-    width: 50%;
-    padding: 0;
-        >p{
-            color:$purple;
+    .services-text-right {
+        width: 50%;
+        padding: 0;
+        box-sizing: border-box;
+
+        > p {
+            color: $purple;
             font-size: 16px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             letter-spacing: 3px;
-            
         }
-        >h2{
+
+        > h2 {
             color: $text-primary;
             font-size: 28px;
             padding-top: 10px;
             line-height: 40px;
             font-family: Arial, Helvetica, sans-serif;
             letter-spacing: 2px;
-            >span{
+
+            > span {
                 color: $purple;
                 font-size: 28px;
             }
         }
     }
-    .services-text-left{
-    width: calc(50% - 10px);
-    padding: 25px 0 0 10%;
-    >p{
-        color: $text-secondary;
-        font-size: 14px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        line-height: 30px;
-    }      
+
+    .services-text-left {
+        width: calc(50% - 10px);
+        padding: 25px 0 0 10%;
+        box-sizing: border-box;
+
+        > p {
+            color: $text-secondary;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 30px;
+        }
     }
 
-    .services-card{
-    width: calc((100% - 30px) /4);
-    height: 200px;
-    padding: 20px 24px;
-    box-sizing: border-box;
-    border: 1px solid $border;
-    border-radius: 8px;
-    margin: 0;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    &:hover{
-        transform: translateY(-6px);
-        border-color: $purple;
-    }
+    .services-card {
+        width: calc((100% - 30px) / 4);
+        height: 200px;
+        padding: 20px 24px;
+        box-sizing: border-box;
+        border: 1px solid $border;
+        border-radius: 8px;
+        margin: 0;
+        transition: all 0.3s ease;
+        cursor: pointer;
 
-        .card-top{
+        &:hover {
+            transform: translateY(-6px);
+            border-color: $purple;
+        }
+
+        .card-top {
             width: 100%;
             display: flex;
             align-items: center;
-            >span{
-            color: $text-muted;
-            font-size: 16px;
-            padding-right: 60px;
-            }
-            >i{
-            font-size: 28px;
-            color: $text-primary;
-            width: 55px;
-            height: 55px;
-            display: flex;
-            flex-shrink: 0;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid $text-muted;
-            background-color: $border;
-            border-radius: 50%;
+            justify-content: space-between;
 
+            > span {
+                color: $text-muted;
+                font-size: 16px;
+                padding-right: 0;
+            }
+
+            > i {
+                font-size: 28px;
+                color: $text-primary;
+                width: 55px;
+                height: 55px;
+                display: flex;
+                flex-shrink: 0;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $text-muted;
+                background-color: $border;
+                border-radius: 50%;
             }
         }
 
-        >h4{
+        > h4 {
             color: $text-primary;
-            font-family:Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 14px;
             letter-spacing: 2px;
             padding-top: 20px;
             text-align: left;
         }
-        >p{
+
+        > p {
             color: $text-muted;
             padding-top: 20px;
-
         }
     }
 }
+
+// RESPONSIVE DESIGN
+
+@media (min-width: 769px) and (max-width: 1199px) {
+
+    .services {
+        min-height: 0;
+        margin: 0 5%;
+        padding: 25px 5%;
+        column-gap: 20px;
+        row-gap: 25px;
+        align-items: flex-start;
+
+        .services-text-right {
+            width: calc(50% - 10px);
+            padding: 0;
+
+            > p {
+                font-size: 12px;
+                letter-spacing: 2px;
+                margin: 0;
+            }
+
+            > h2 {
+                font-size: 22px;
+                line-height: 32px;
+                letter-spacing: 1px;
+                padding-top: 8px;
+                margin: 0;
+
+                > span {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .services-text-left {
+            width: calc(50% - 10px);
+            padding: 15px 0 0 5%;
+
+            > p {
+                font-size: 11px;
+                line-height: 22px;
+                margin: 0;
+            }
+        }
+
+        .services-card {
+            width: calc(50% - 10px);
+            height: 175px;
+            padding: 16px 18px;
+            box-sizing: border-box;
+            margin: 0;
+
+            .card-top {
+                width: 100%;
+
+                > span {
+                    font-size: 13px;
+                    padding-right: 20px;
+                }
+
+                > i {
+                    width: 45px;
+                    height: 45px;
+                    font-size: 22px;
+                }
+            }
+
+            > h4 {
+                font-size: 12px;
+                letter-spacing: 1.5px;
+                padding-top: 14px;
+                margin: 0;
+            }
+
+            > p {
+                font-size: 11px;
+                line-height: 18px;
+                padding-top: 12px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+// RESPONSIVE FOR SIZE 768 PX
+
+@media (max-width: 768px) {
+
+    .services {
+        min-height: 0;
+        margin: 0 5%;
+        padding: 20px 5%;
+        column-gap: 15px;
+        row-gap: 20px;
+        align-items: flex-start;
+
+        .services-text-right {
+            width: calc(50% - 7.5px);
+            padding: 0;
+
+            > p {
+                font-size: 10px;
+                letter-spacing: 1.5px;
+                margin: 0;
+            }
+
+            > h2 {
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.5px;
+                padding-top: 6px;
+                margin: 0;
+
+                > span {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .services-text-left {
+            width: calc(50% - 7.5px);
+            padding: 10px 0 0 3%;
+
+            > p {
+                font-size: 9px;
+                line-height: 17px;
+                margin: 0;
+            }
+        }
+
+        .services-card {
+            width: calc(50% - 7.5px);
+            height: 150px;
+            padding: 14px 15px;
+            box-sizing: border-box;
+            margin: 0;
+
+            .card-top {
+                width: 100%;
+
+                > span {
+                    font-size: 11px;
+                    padding-right: 10px;
+                }
+
+                > i {
+                    width: 38px;
+                    height: 38px;
+                    font-size: 19px;
+                }
+            }
+
+            > h4 {
+                font-size: 10px;
+                letter-spacing: 1px;
+                padding-top: 11px;
+                margin: 0;
+            }
+
+            > p {
+                font-size: 9px;
+                line-height: 15px;
+                padding-top: 9px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+// RESPONSIVE FOR SIZE 480 PX
+
+@media (max-width: 480px) {
+
+    .services {
+        min-height: 0;
+        margin: 0 5%;
+        padding: 18px 4%;
+        column-gap: 10px;
+        row-gap: 15px;
+        align-items: flex-start;
+
+        .services-text-right {
+            width: calc(50% - 5px);
+            padding: 0;
+
+            > p {
+                font-size: 8px;
+                letter-spacing: 1px;
+                padding: 0;
+                margin: 0;
+            }
+
+            > h2 {
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0;
+                padding-top: 5px;
+                margin: 0;
+
+                > span {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .services-text-left {
+            width: calc(50% - 5px);
+            padding: 5px 0 0;
+
+            > p {
+                font-size: 8px;
+                line-height: 14px;
+                margin: 0;
+            }
+        }
+
+        .services-card {
+            width: calc(50% - 5px);
+            height: 135px;
+            padding: 12px;
+            box-sizing: border-box;
+            margin: 0;
+            border-radius: 6px;
+
+            .card-top {
+
+                > span {
+                    font-size: 9px;
+                    padding-right: 5px;
+                }
+
+                > i {
+                    width: 32px;
+                    height: 32px;
+                    font-size: 16px;
+                }
+            }
+
+            > h4 {
+                font-size: 9px;
+                letter-spacing: 0.7px;
+                padding-top: 9px;
+                margin: 0;
+            }
+
+            > p {
+                font-size: 8px;
+                line-height: 13px;
+                padding-top: 7px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
