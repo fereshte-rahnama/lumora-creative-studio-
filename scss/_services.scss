@@ -1,11 +1,10 @@
 .services{
-    min-height: 500px;
+    min-height: 400px;
     margin: 0 5%;
     padding: 20px 5%;
     column-gap: 10px;
     row-gap: 20px;
     background-color: $bg-primary;
-
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
