@@ -213,6 +213,12 @@ header > nav ul > .talk-btn i {
   border: 1px solid #292733;
   border-radius: 8px;
   margin: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.services .services-card:hover {
+  transform: translateY(-6px);
+  border-color: #B98AFF;
 }
 .services .services-card .card-top {
   width: 100%;
