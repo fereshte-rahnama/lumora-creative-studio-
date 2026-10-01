@@ -30,8 +30,12 @@ header > nav ul {
   align-items: center;
 }
 header > nav ul > li > a {
-  font-size: 18px;
+  font-size: 16px;
   color: #F5F3F8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header > nav ul > li > a:hover {
+  color: #B98AFF;
 }
 header > nav ul > .talk-btn {
   display: flex;
@@ -520,6 +524,9 @@ footer > ul {
 footer > ul > li > a {
   color: #B8B5C2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer > ul > li > a:hover {
+  color: #B98AFF;
 }
 footer > p {
   align-items: center;
