@@ -105,11 +105,32 @@ header > nav .menu-toggle {
   header > nav ul {
     display: none;
   }
+  header > nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 5%;
+    width: 200px;
+    padding: 20px;
+    gap: 15px;
+    background-color: #101016;
+    border: 1px solid #292733;
+    border-radius: 12px;
+    z-index: 100;
+  }
   header > nav .menu-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #F5F3F8;
     font-size: 30px;
+    cursor: pointer;
   }
 }
 @media (max-width: 480px) {
