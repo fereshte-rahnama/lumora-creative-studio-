@@ -15,11 +15,9 @@ LUMORA was created as a frontend practice and portfolio project with a focus on 
 * CSS3
 * JavaScript
 * Flexbox
-* CSS Grid
 * Responsive Design
 * Media Queries
 * Boxicons
-* Google Fonts
 
 ## Features
 
@@ -43,10 +41,8 @@ The project uses **SCSS/Sass** to organize and maintain the styling code.
 The styling makes use of:
 
 * SCSS variables
-* Mixins
 * Nesting
 * Partial files
-* Reusable styles
 * Responsive media queries
 
 The project separates the SCSS source from the compiled CSS, making the styling easier to manage and update.
@@ -84,9 +80,9 @@ The design focuses on creating a clean and contemporary landing page for a ficti
 The main purpose of this project was to practice and demonstrate:
 
 * SCSS architecture
-* Variables and mixins
+* Variables 
 * SCSS nesting
-* Flexbox and CSS Grid
+* Flexbox 
 * Responsive web design
 * Media queries
 * JavaScript interactions
